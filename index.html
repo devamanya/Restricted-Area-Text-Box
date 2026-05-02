@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restricted Textarea | JS Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <label for="message">Your Message</label>
+        <div class="textarea-wrapper">
+            <textarea 
+                id="message" 
+                placeholder="Start typing your message here..." 
+                maxlength="200"></textarea>
+            
+            <div class="counter-container">
+                <span id="char-count">0</span> / <span id="max-limit">200</span>
+            </div>
+        </div>
+        <p id="warning-text" class="warning-text hidden">Character limit reached!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
